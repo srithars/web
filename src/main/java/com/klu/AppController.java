@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class AppController {
 	
-	@GetMapping("/add/{a}/{b}")
+	@GetMapping("/mul/{a}/{b}")
 	public String add(@PathVariable("a") int a, @PathVariable("b") int b) {
-		return "Addition of two numbers are: " +(a+b);
+		return "Multiplication of two numbers are: " +(a+b);
 	}
 	
-	@GetMapping("/sub/{a}/{b}")
+	@GetMapping("/div/{a}/{b}")
 	public String sub(@PathVariable("a") int a, @PathVariable("b") int b) {
-		return "Substraction of two numbers are: " +(a-b);
+		return "Division of two numbers are: " +(a-b);
 	}
 
 }
